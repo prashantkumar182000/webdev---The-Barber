@@ -1,0 +1,71 @@
+<html>
+<head><title>BARBER</title>
+<link rel="stylesheet" href="shyam.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<section id="banner">
+    <img src="https://seeklogo.com/images/T/the-barber-logo-A341CC4721-seeklogo.com.png" class="logo">
+     <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>INVEST IN YOUR HAIRS, IT IS THE CROWN YOU NEVER TAKE OFF.</p>
+         <div class="banner-btn"> 
+             <a href="#"><span></span>Find Out</a>
+             <a href="#"><span></span>Read More</a>
+         </div>
+    </div>
+</section>
+    <div id="sideNav">
+        <nav>
+        <ul>
+             <li><a href="#">HOME</a></li>
+             <li><a href="#">FEATURES</a></li>
+             <li><a href="#">SERVICES</a></li>
+             <li><a href="#">TESTIMONIALS</a></li>
+             <li><a href="#">MEET US</a></li>
+        </ul>
+     </nav>
+    </div>
+    <div id="menuBtn">
+    <img src="https://img.icons8.com/ios-filled/2x/ffffff/menu.png" id="menu">
+    </div>
+    <!--Features-->
+    <section id="feature">
+        <div class="title-text">
+        <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+           <div class="features">
+            <h1>EXPERIENCED STAFFS</h1>  
+           </div>
+            <div class="features-img">
+            <img src="https://media.gettyimages.com/photos/hairdressers-standing-arms-crossed-in-hair-salon-picture-id1030247788?k=6&m=1030247788&s=612x612&w=0&h=WSegvKtw8Pmn1XnnMDoS39rSO3kVGv3J-kwuGS2fCQQ=">
+           </div>
+        </div>
+    </section>
+    
+    <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu") 
+    
+    sideNav.style.right = "-250px";
+        
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+                 sideNav.style.right = "0"; 
+                 menu.src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=close";
+            }
+        else
+            {
+                sideNav.style.right = "-250px";
+                menu.src="https://img.icons8.com/ios-filled/2x/ffffff/menu.png";
+            }
+    }
+    </script>
+    
+</body>
+</html> 
